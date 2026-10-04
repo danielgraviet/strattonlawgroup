@@ -1,0 +1,64 @@
+.form {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
+  padding: 22px;
+  margin: 28px 0;
+  max-width: 520px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.form input,
+.form select,
+.form textarea {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 8px 10px;
+  color: var(--ink);
+  font: inherit;
+}
+
+.form input,
+.form select {
+  min-height: 42px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.success {
+  border-left: 4px solid var(--gold);
+  background: #fff;
+  padding: 12px 14px;
+  color: var(--accent-strong);
+  font-weight: 800;
+  margin: 0;
+}
+
+.error {
+  border-left: 4px solid #b3261e;
+  background: #fff;
+  padding: 12px 14px;
+  color: #b3261e;
+  font-weight: 800;
+  margin: 0;
+}

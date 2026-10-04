@@ -1,0 +1,76 @@
+.footer {
+  border-top: 1px solid var(--line);
+  background: #18222b;
+  color: #f6f8f9;
+  padding: 56px 0 24px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 40px;
+}
+
+.brand {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.brand {
+  color: var(--accent);
+  font-family: var(--font-heading, "Roboto Slab"), Georgia, serif;
+}
+
+.copy {
+  max-width: 520px;
+  color: #c8d0d6;
+}
+
+.copy a:hover {
+  color: var(--accent);
+}
+
+.offices {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  color: #c8d0d6;
+}
+
+.offices strong {
+  display: block;
+  color: #f6f8f9;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  color: #e4e9ed;
+  font-weight: 700;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+.legal {
+  margin-top: 34px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 20px;
+  color: #abb6bf;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 720px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+}

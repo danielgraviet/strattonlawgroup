@@ -1,0 +1,78 @@
+.hero {
+ padding: 72px 0 56px;
+ background: linear-gradient(110deg, #18222b, #26323d);
+ color: #fff;
+}
+
+.heroWithImage {
+ background:
+ linear-gradient(90deg, rgba(24, 34, 43, 0.9), rgba(24, 34, 43, 0.62)),
+ var(--hero-image) center / cover;
+}
+
+.hero :global(.lead) {
+ color: #e5ebef;
+}
+
+.updated {
+ color: #c7d0d7;
+ font-size: 0.85rem;
+ margin-top: -8px;
+}
+
+.layout {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) 320px;
+ gap: 44px;
+ align-items: start;
+}
+
+.aside {
+ position: sticky;
+ top: 104px;
+ display: grid;
+ gap: 16px;
+}
+
+.aside h2 {
+ font-size: 1.4rem;
+}
+
+.relatedCard ul {
+ display: grid;
+ gap: 10px;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.relatedCard li {
+ margin: 0;
+}
+
+.relatedCard a {
+ color: var(--accent-strong);
+ font-weight: 800;
+}
+
+.relatedCard a:hover {
+ color: var(--accent);
+}
+
+@media (max-width: 860px) {
+ .layout {
+ grid-template-columns: minmax(0, 1fr);
+ }
+
+ .aside {
+ position: static;
+ }
+}
+
+.hero :global(.eyebrow) {
+ color: var(--accent);
+}
+
+.hero h1 {
+ margin-bottom: 18px;
+}
