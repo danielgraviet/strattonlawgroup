@@ -16,7 +16,8 @@ const nextConfig = {
  return [
  { source: "/our-team-1", destination: "/our-team", permanent: true },
  { source: "/contact-us", destination: "/contact", permanent: true },
- { source: "/blog/:slug", destination: "/:slug", permanent: true }
+ // Skip paths with a file extension so images in public/blog still load.
+ { source: "/blog/:slug([^./]+)", destination: "/:slug", permanent: true }
  ];
  },
  async rewrites() {
